@@ -14,7 +14,7 @@ st.markdown('''
 
 st.caption(':green[다른 사람의 지원정보 미리보기]:sunglasses:')
 scores = pd.read_csv(
-    "./gpascore1.csv", names=['합격여부(0불합/1합)', '토익', '학점', '분류번호'], skiprows=1)
+    "streamlit_project/gpascore1.csv", names=['합격여부(0불합/1합)', '토익', '학점', '분류번호'], skiprows=1)
 # pd.options.display.float_format = '{:.1f}'.format
 
 st.dataframe(scores, height=150, use_container_width=True)
