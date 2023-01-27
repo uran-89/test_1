@@ -3,7 +3,7 @@ import pandas as pd
 from keras.models import load_model
 
 
-model = load_model('../model')
+model = load_model('streamlit_project/model/saved_model.pb')
 
 
 st.title('합격예측')
